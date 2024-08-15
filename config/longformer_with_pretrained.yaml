@@ -1,0 +1,50 @@
+CLUSTER:
+  agglomerative:
+    compute_full_tree: auto
+    linkage: average
+    metric: cosine
+  clustering: kmeans
+  dbscan:
+    algorithm: auto
+    eps: 0.0
+    metric: cosine
+    min_samples: 1
+    n_jobs: -1
+  kmeans:
+    algorithm: lloyd
+    init: k-means++
+    max_iter: 300
+    n_init: 10
+    random_state: 42
+  num_clusters: 0.5
+DATA:
+  file_name: test.json
+  file_path: data/nus
+DATE: '240520'
+FOLDER_NAME: unit_sentence_phrase_max_topicEmbed_mean_num_clusters_0.5_eps_0.0_pos_None_sim_None_topic_None
+MODEL:
+  embedding:
+    document: max
+    phrase: max
+  glow:
+    pooling: first-last-avg
+    pretrained: lr_0.001_epochs_5
+    unit: sentence
+    usage: with
+  max_length: 4098
+  model: longformer
+  model_name: allenai/longformer-base-4096
+POSITION:
+  method: sum
+  w1: 100.0
+  w2: 1.0
+SAVEDIR: data/nus/results_240520/longformer/with/first-last-avg/lr_0.001_epochs_5/unit_sentence_phrase_max_topicEmbed_mean_num_clusters_0.5_eps_0.0_pos_None_sim_None_topic_None
+SCORES:
+  position: null
+  similarity: null
+  topic: null
+TOPIC:
+  diversity: 0.5
+  embedding: mean
+  lambda: 0.5
+  method: roc
