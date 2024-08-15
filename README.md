@@ -20,11 +20,11 @@ transformers 4.21.0
 ## Pre-requisites
 Make sure to set your path on `UFORank` folder to run all the script files.
 
-To get pretrained Glow weights, you should run `train_glow_longformer.sh` in the scripts folder. 
+To get pretrained Glow weights, you should run `train_glow.sh` in the scripts folder. 
 ```bash
 bash scripts/train_glow.sh
 ```
-Then, it will be saved in a folder, `bertflow_model`,in each dataset folder.
+Then, it will be saved in a folder, `bertflow_model`, in each dataset folder.
 
 ## Run
 * If you have the pretrained Glow weights,
