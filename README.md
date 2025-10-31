@@ -26,6 +26,8 @@ bash scripts/train_glow.sh
 ```
 Then, it will be saved in a folder, `bertflow_model`, in each dataset folder.
 
+Or, you can download the pre-trained weights of Glow for each dataset from [here](https://drive.google.com/drive/folders/18FsaTigrGEAe5bVsZrLfja7pew7q6-W4?usp=sharing)
+
 ## Run
 * If you have the pretrained Glow weights,
 ```bash
